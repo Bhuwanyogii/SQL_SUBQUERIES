@@ -1,0 +1,4 @@
+-- Q1. FIND THE HIGHEST RATED MOVIE
+
+SELECT * FROM movies
+WHERE score = (SELECT MAX(score) FROM movies)
